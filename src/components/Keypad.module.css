@@ -1,0 +1,28 @@
+.keypadContainer {
+    background-color: var(--keypad-background-color);
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 16rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0.6rem;
+  }
+
+@media only screen and (min-width: 400px) {
+  .keypadContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    height:auto;
+    padding: 1rem;
+    border-radius: 0.25rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0.5rem;
+  }
+}

@@ -1,0 +1,76 @@
+button {
+    font-family: Spartan, sans-serif;;
+}
+
+.regularKeyStyle {
+    background-color: var(--num-key-color);
+    color: var(--key-text-color);
+    padding: 0.5rem;
+    font-size: 1rem;
+    box-shadow: var(--num-key-shadow-color) 0px 0.15rem 0px 0px;
+    border-radius: 5px;
+}
+
+.regularKeyStyle:hover {
+    background-color: var(--num-key-hover-color);
+}
+
+.regularKeyStyle:focus {
+    background-color: var(--num-key-hover-color);
+}
+
+.delKeyStyle {
+    background-color: var(--del-key-color);
+    color: var(--special-key-color);
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    box-shadow: var(--del-key-shadow-color) 0px 0.15rem 0px 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.delKeyStyle:hover {
+    background-color: var(--del-key-hover-color);
+}
+
+.delKeyStyle:focus {
+    background-color: var(--del-key-hover-color);
+}
+
+.resetKeyStyle {
+    grid-area: 5 / 1 / 6 / 3;
+    background-color: var(--reset-key-color);
+    color: var(--special-key-color);
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    box-shadow: var(--reset-key-shadow-color) 0px 0.15rem 0px 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.resetKeyStyle:hover {
+    background-color: var(--reset-key-hover-color);
+}
+
+.resetKeyStyle:focus {
+    background-color: var(--reset-key-hover-color);
+}
+
+
+.equalKeyStyle {
+    grid-area: 5 / 3 / 6 / 5;
+    background-color: var(--equal-key-color);
+    color: var(--equal-key-text-color);
+    padding: 0.5rem;
+    font-size: 1rem;
+    box-shadow: var(--equal-key-shadow-color) 0px 0.15rem 0px 0px;
+    border-radius: 5px;
+}
+
+.equalKeyStyle:hover {
+    background-color: var(--equal-key-hover-color);
+}
+
+.equalKeyStyle:focus {
+    background-color: var(--equal-key-hover-color);
+}

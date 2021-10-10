@@ -1,13 +1,125 @@
-body {
+/* obliterate all padding and margin */
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* reset buttons */
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root,
+.theme1 {
+  font-family: Spartan, sans-serif;
+  font-size: 6vw;
+
+  /* backgrounds */
+  --main-background-color: hsl(222, 26%, 31%);
+  --keypad-background-color: hsl(223, 31%, 20%);
+  --toggle-background-color: hsl(223, 31%, 20%);
+  --screen-background-color: hsl(224, 36%, 15%);
+
+  /* keys */
+  --del-key-color: hsl(225, 21%, 49%);
+  --del-key-hover-color: hsl(224, 26%, 63%);
+  --del-key-shadow-color: hsl(224, 28%, 35%);
+  --reset-key-color: hsl(225, 21%, 49%);
+  --reset-key-hover-color: hsl(224, 26%, 63%);
+  --reset-key-shadow-color: hsl(224, 28%, 35%);
+  --toggle-key-color: hsl(6, 63%, 50%);
+  --toggle-key-hover-color: hsl(6, 57%, 56%);
+  --equal-key-color: hsl(6, 63%, 50%);
+  --equal-key-hover-color: hsl(6, 57%, 56%);
+  --equal-key-shadow-color: hsl(6, 70%, 34%);
+  --num-key-color: hsl(30, 25%, 89%);
+  --num-key-hover-color: hsl(0, 94%, 86%);
+  --num-key-shadow-color: hsl(28, 16%, 65%);
+
+  /* text */
+  --key-text-color: hsl(221, 14%, 31%);
+  --special-key-color: white;
+  --equal-key-text-color: white;
+  --title-text-color: white;
+  --screen-text-color: white;
+}
+
+.theme2 {
+  /* backgrounds */
+  --main-background-color: hsl(0, 0%, 90%);
+  --keypad-background-color: hsl(0, 5%, 81%);
+  --toggle-background-color: hsl(0, 5%, 81%);
+  --screen-background-color: hsl(0, 0%, 93%);
+
+  /* keys */
+  --del-key-color: hsl(185, 42%, 37%);
+  --del-key-hover-color: hsl(185, 19%, 50%);
+  --del-key-shadow-color: hsl(185, 58%, 25%);
+  --reset-key-color: hsl(185, 42%, 37%);
+  --reset-key-hover-color: hsl(185, 19%, 50%);
+  --reset-key-shadow-color: hsl(185, 58%, 25%);
+  --toggle-key-color: hsl(25, 98%, 40%);
+  --toggle-key-hover-color: hsl(25, 68%, 48%);
+  --equal-key-color: hsl(25, 98%, 40%);
+  --equal-key-hover-color: hsl(25, 68%, 48%);
+  --equal-key-shadow-color: hsl(25, 99%, 27%);
+  --num-key-color: hsl(45, 7%, 89%);
+  --num-key-hover-color: hsl(0, 0%, 98%);
+  --num-key-shadow-color: hsl(35, 11%, 61%);
+
+  /* text */
+  --key-text-color: hsl(60, 10%, 19%);
+  --special-key-color: white;
+  --equal-key-text-color: white;
+  --title-text-color: black;
+  --screen-text-color: black;
+}
+
+.theme3 {
+  /* backgrounds */
+  --main-background-color: hsl(268, 75%, 9%);
+  --keypad-background-color: hsl(268, 71%, 12%);
+  --toggle-background-color: hsl(268, 71%, 12%);
+  --screen-background-color: hsl(268, 71%, 12%);
+
+  /* keys */
+  --del-key-color: hsl(281, 89%, 26%);
+  --del-key-hover-color: hsl(281, 56%, 34%);
+  --del-key-shadow-color: hsl(285, 91%, 52%);
+  --reset-key-color: hsl(281, 89%, 26%);
+  --reset-key-hover-color: hsl(281, 56%, 34%);
+  --reset-key-shadow-color: hsl(285, 91%, 52%);
+  --toggle-key-color: hsl(176, 100%, 44%);
+  --toggle-key-hover-color: hsl(176, 93%, 62%);
+  --equal-key-color: hsl(176, 100%, 44%);
+  --equal-key-hover-color: hsl(176, 93%, 62%);
+  --equal-key-shadow-color: hsl(177, 92%, 70%);
+  --num-key-color: hsl(268, 47%, 21%);
+  --num-key-hover-color: hsl(268, 35%, 32%);
+  --num-key-shadow-color: hsl(290, 70%, 36%);
+
+  /* text */
+  --key-text-color: hsl(52, 100%, 62%);
+  --special-key-color: white;
+  --equal-key-text-color: hsl(268, 75%, 9%);
+  --title-text-color: hsl(52, 100%, 62%);
+  --screen-text-color: hsl(52, 100%, 62%);
+}
+
+#root {
+  background-color: var(--main-background-color);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 400px) {
+  :root,
+  theme1 {
+    font-size: 32px;
+  }
 }

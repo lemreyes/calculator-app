@@ -1,0 +1,19 @@
+#root {
+  background-color: var(--main-background-color);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-container {
+  width: 100%;
+  background-color: var(--main-background-color);
+}
+
+@media only screen and (min-width: 500px) {
+  .App-container {
+    width: 500px;
+  }
+}

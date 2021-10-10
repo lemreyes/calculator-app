@@ -1,0 +1,56 @@
+.ToggleSwitch {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: relative;
+    margin-right: 1rem;
+}
+
+/* hide radio buttons */
+.ToggleSwitch input {
+    display: none;
+}
+
+.switchContainer {
+    position:relative;
+    background-color: var(--toggle-background-color);
+    width: 3rem;
+    height: 1rem;
+    border-radius: 1rem;
+}
+
+.SwitchLabel {
+    font-size: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.ToggleLabel {
+    position: absolute;
+    font-size: 0.5rem;
+    top: -0.7rem;
+    left: 0.5rem;
+    letter-spacing: 0.25rem;
+}
+
+.dot {
+    position: absolute;
+    top: 0.15rem;
+    left: 0.2rem;
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 50%;
+    background-color: var(--toggle-key-color);
+}
+
+.dot:hover {
+    background-color: var(--toggle-key-hover-color);
+}
+
+.dot_1to2 {
+    transform: translateX(1rem);    /* distance between position 1 and position 2 of switch */
+}
+
+.dot_2to3 {
+    transform: translateX(2rem);    /* distance between position 1 and position 3 of switch */
+}

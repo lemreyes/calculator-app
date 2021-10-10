@@ -1,0 +1,18 @@
+.DisplayContainer {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--screen-background-color);
+  border-radius: 0.3rem;
+  padding: 1rem;
+}
+
+.DisplayOutput {
+  font-size: 1.5rem;
+  color: var(--screen-text-color);
+}
