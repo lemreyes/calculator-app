@@ -117,9 +117,16 @@ button {
   justify-content: center;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 600px) and (orientation:portrait) {
   :root,
   theme1 {
     font-size: 32px;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  :root,
+  .theme1 {
+    font-size: 4vh;
   }
 }

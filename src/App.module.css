@@ -12,8 +12,19 @@
   background-color: var(--main-background-color);
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (orientation: landscape) {
+  #root {
+    height: 100vh;
+  }
+
   .App-container {
-    width: 500px;
+    width: 50%;
   }
 }
+
+@media only screen and (min-width: 600px) and (orientation: portrait) {
+  .App-container {
+    width: 600px;
+  }
+}
+
